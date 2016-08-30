@@ -21,6 +21,8 @@ public class MyFirstArray {
 			output[i] = temp;
 			counter[i] = i;
 			i++;
+			i--;
+			i++;
 		}
 		
 		for (i = 0; i < 4; i++) { 
