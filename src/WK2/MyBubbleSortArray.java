@@ -1,5 +1,6 @@
 package WK2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MyBubbleSortArray {
@@ -10,8 +11,6 @@ public class MyBubbleSortArray {
 	
 	
 	public static void main(String[] args) {
-		
-		
 		
 		System.out.println("How many numbers would you like to generate?");
 		
@@ -24,8 +23,17 @@ public class MyBubbleSortArray {
 			array[i] = (int) (Math.random()*100+1);
 		}
 		
+		Arrays.sort(array);
+		
+		System.out.println("You have generated the following numbers.");
 		for (int i = 0; i < tempInt; i++) {
-			System.out.println(array[i]);
+			if (i < tempInt -1) {
+				System.out.print(array[i] + ", ");
+			}
+			else {
+				System.out.print(array[i] + ".");
+			}
+			
 		}
 
 	}
