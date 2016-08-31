@@ -1,6 +1,6 @@
 package WK2;
 
-import java.util.Arrays;
+//import java.util.Arrays;
 import java.util.Scanner;
 
 public class MyBubbleSortArray {
@@ -74,15 +74,21 @@ public class MyBubbleSortArray {
 	public static void errHandler() {
 		
 		while (true) {
-			if (tempStr.length() > 0) {
-				try {
-					tempInt = Integer.parseInt(tempStr);
+			try {
+				tempInt = Integer.parseInt(tempStr);
+				if (tempInt > 10000) {
+					System.out.println("Please choose a smaller amount of numbers to generate.");
+					tempStr = usr.next();
+					continue;
+				} else {
 					break;
 				}
-				catch (NumberFormatException e) {
-					
-				}
+				
 			}
+			catch (NumberFormatException e) {
+				
+			}
+			
 			System.out.println("Error! " + tempStr + " is not the correct format.\n" +
 								"Please enter a whole number.");
 			tempStr = usr.next();
