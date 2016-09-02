@@ -11,8 +11,23 @@ public class MyDimensionalArray {
 	
 	public static void main(String[] args) {
 		while (running) {
-			System.out.println("Let's play a word association game.");
 			
+			String multi[][] = new String [5][5];
+			multi[][] = {
+					
+					"Happy", "";
+					"Clouds","";
+					"Time","";
+					"Orange","";
+					"Family";"";
+					
+			}
+			
+			System.out.println("Let's play a word association game.");
+			System.out.println("I'll give you a word and you provide a response.");
+			
+			
+			tempStr = usr.next();
 		}
 	}
 	
